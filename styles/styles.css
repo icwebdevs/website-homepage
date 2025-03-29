@@ -8,6 +8,12 @@ body {
     padding: 0;
 }
 
+.divider {
+    border: solid rgb(209, 149, 28) 2px;
+    width: 80%; 
+    margin: auto;
+}
+
 #top-logo {
     width: 50px;
     height: 50px;
@@ -83,12 +89,17 @@ body {
     position: sticky;
 }
 
-ul {
-    list-style-type: none;
+#nav-bar ul {
+    list-style-type: none; 
     margin: 0;
     padding: 0;
-   
-  }
+}
+
+
+ul {
+    list-style-type: disc; 
+    margin-left: 20px; 
+}
 
 a {
 text-decoration: none;
@@ -116,7 +127,7 @@ font-family: Montserrat, sans-serif;
     font-size: 16px; 
     display: flex; 
     justify-content: space-evenly;
-    transition: background 0.5s ease;
+    transition: background 0.5s ease-in-out, color 0.3s ease; 
     padding: 3px;
 }
 
@@ -155,6 +166,7 @@ font-family: Montserrat, sans-serif;
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 0;
+    margin-top: 75px;
 }
 
 #emph-title-txt {
@@ -163,6 +175,7 @@ font-family: Montserrat, sans-serif;
     text-align: center;
     margin-top: 0;
     padding-top: 0;
+    margin-bottom: 50px;
 }
 
 #main-subtitle {
@@ -170,4 +183,184 @@ font-family: Montserrat, sans-serif;
     margin-left: auto; 
     margin-right: auto;
     max-width: 500px;
+}
+
+#trial-btn {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 6px 11px;
+    font-family: Montserrat, sans-serif;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(#000, #656363);
+    cursor: pointer; 
+    transition: background 0.3s ease; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#trial-btn:hover {
+    background: linear-gradient(#656363, #000); 
+    color: white;
+    border: none; 
+    transform: scale(1.1);
+}
+
+#trial-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 50px;
+}
+
+i {
+    color: black;
+    font-size: 20px;
+}
+
+i:hover {
+    color: #ecb13a;
+    transition: color 0.3s ease;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: #f9f6ee; 
+    border-top: solid 2px gray; 
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-direction: column;
+}
+
+#footer h5 {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.terms-container {
+ display: inline-block;
+ padding: 3px;
+ transition: background 0.3s ease , transform 0.3s ease;
+}
+
+.terms-container:hover {
+    border-radius: 10px;
+    background: linear-gradient(#da9e26, #f2d693);
+    padding: 3px;
+    transform: scale(1.05);
+}
+
+#blog-txt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#blog-txt-container:hover {
+    color: #ecb13a;
+    transition: color 0.3s ease;
+}
+
+.section-txt {
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    color: #000;
+    margin: 0; 
+    padding: 10px; 
+    text-align: center;
+}
+
+.section-subtxt {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin: 0; 
+    padding: 5px; 
+}
+
+.section {
+    margin-top: 100px;
+}
+
+#price-title {
+    text-align: center;
+}
+
+.priceopt-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+#price-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.priceopt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    border: solid 2px gray; 
+    border-radius: 15px; 
+    padding: 20px; 
+    margin: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(white, #F9F6EE);
+    transition: transform 0.3s ease-in-out, background 0.3s ease;
+    font-family: Montserrat, sans-serif;
+    max-width: 500px;
+    width: 100%; 
+}
+
+.price-btn {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 6px 11px;
+    font-family: Montserrat, sans-serif;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(#000, #656363);
+    cursor: pointer; 
+    transition: background 0.3s ease, transform 0.3s ease-in-out; /* Combine transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px;
+}
+
+.price-btn:hover {
+    background: linear-gradient(#656363, #000); 
+    color: white;
+    border: none; 
+    transform: scale(1.1);
 }
