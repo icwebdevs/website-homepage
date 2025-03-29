@@ -32,8 +32,14 @@
           </ul>
     </nav></div>
 
-    <h1 id="main-title">Launch your dream project </h1><h1 id="emph-title-txt">today</h1>
-    <h3 id="main-subtitle">By starting your free trial today, you can streamline work, troubleshoot errors, and create roadmaps for your ideas.</h3>
+    <div id="main-content">
+      <img src="https://c.stocksy.com/a/1hy400/z9/1186619.jpg" alt="Team working on a project" id="main-img">
+      <div id="main-text">
+          <h1 id="main-title">Launch your dream project</h1>
+          <h1 id="emph-title-txt">today</h1>
+          <h3 id="main-subtitle">By starting your free trial today, you can streamline work, troubleshoot errors, and create roadmaps for your ideas.</h3>
+      </div>
+  </div>
 
     <div id="trial-btn-container">
 <button id="trial-btn"><strong>Start Free Trial</strong></button>
@@ -89,29 +95,72 @@
   <div data-aos="fade-up" data-aos-duration="1000" 
      data-aos-delay="200" 
      data-aos-easing="ease-in-out" class="section">
-      <h2 class="section-txt">Made for Modern Teams:</h2>
+      <h2 class="section-txt" id="modern-txt">Made for <div id="emph-text">Modern</div> Teams:</h2>
       <p class="section-subtxt"><strong>We are shaped by the practices and principles that distinguish world-class product teams from the rest: relentless focus, fast execution, and a commitment to the quality of craft.</strong></p class="section-subtxt">
+        <img id="modern-img" alt="businesswoman with a tablet" src="https://st4.depositphotos.com/13193658/22345/i/450/depositphotos_223456744-stock-photo-partial-view-businesswoman-tablet-making.jpg">
   </div>
 
   <div data-aos="fade-up" data-aos-duration="1000" 
      data-aos-delay="200" 
      data-aos-easing="ease-in-out" class="section">
-      <h2 class="section-txt">Cut Communication Delay:</h2>
-      <p class="section-subtxt"><strong>Guide your team around a single product timeline. Plan, manage, and track all product pathways with our simple visual planning tools.</strong></p class="section-subtxt">
+     <div class="comms-section">
+      <div>
+          <h2 class="section-txt">Cut Communication Delay:</h2>
+          <p class="section-subtxt">
+              <strong>Guide your team around a single product timeline. Plan, manage, and track all product pathways with our simple visual planning tools.</strong>
+          </p>
+      </div>
+      <img id="comms-img" alt="a business team at work" src="https://st2.depositphotos.com/1258191/11997/i/600/depositphotos_119974112-stock-photo-business-team-at-work.jpg">
   </div>
 
   <div data-aos="fade-up" data-aos-duration="1000" 
      data-aos-delay="200" 
      data-aos-easing="ease-in-out" class="section">
-      <h2 class="section-txt">Section 4</h2>
-      <p class="section-subtxt"><strong>Placeholder text is here. Placeholder text is here.Placeholder text is here. Placeholder text is here. Placeholder text is here.</strong></p class="section-subtxt">
-  </div>
+      <h2 class="section-txt">Seamless Integration:</h2>
+      <p class="section-subtxt"><strong>Easily connect with the tools your team already uses. Our platform integrates with popular apps to streamline your workflow and keep everything in sync.</strong></p>
+
+      <table border="3" class="integration-table">
+           <tr>
+               <th>App</th>
+               <th>Integration Type</th>
+               <th>Benefit</th>
+           </tr>
+           <tr>
+               <td>Slack</td>
+               <td>Notifications</td>
+               <td>Stay updated in real-time</td>
+           </tr>
+           <tr>
+               <td>Google Drive</td>
+               <td>File Sync</td>
+               <td>Access documents easily</td>
+           </tr>
+           <tr>
+               <td>Trello</td>
+               <td>Task Management</td>
+               <td>Organize projects effortlessly</td>
+           </tr>
+      </table>
+</div>
 
   <div data-aos="fade-up" data-aos-duration="1000" 
      data-aos-delay="200" 
      data-aos-easing="ease-in-out" class="section">
-      <h2 class="section-txt">Section 5</h2>
-      <p class="section-subtxt"><strong>Placeholder text is here. Placeholder text is here.Placeholder text is here. Placeholder text is here. Placeholder text is here.</strong></p class="section-subtxt">
+     <h2 class="section-txt">What Our Users Say:</h2>
+     <div class="testimonial-container">
+         <div class="testimonial">
+             <p class="section-subtxt">"This platform transformed our workflow. Highly recommended!"</p>
+             <h4 class="section-subtxt">- Alex R.</h4>
+         </div>
+         <div class="testimonial">
+             <p class="section-subtxt">"Seamless integration with our tools made our team more efficient."</p>
+             <h4 class="section-subtxt">- Jordan M.</h4>
+         </div>
+         <div class="testimonial">
+             <p class="section-subtxt">"Fast execution, great UX, and top-notch security! We could never be happier with Company Name"</p>
+             <h4 class="section-subtxt">- Casey L.</h4>
+         </div>
+     </div>
   </div>
 
     <div id="msg-container">
@@ -153,7 +202,7 @@
         <h5 id="terms-txt"><div class="terms-container"><a href="terms/termspg.html">Terms of Service</a></div> | <div class="terms-container"><a href="policy/policypg.html">Privacy Policy</a></div></h5>
       </div>
     
-    <script href="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init();
